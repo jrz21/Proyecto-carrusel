@@ -1,0 +1,32 @@
+.carousel-container {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: calc(100%); /* 3 veces el ancho del contenedor para contener los 3 textos */
+    animation: slide 10s infinite;
+  }
+  
+  .carousel-item {
+    width: calc(100%); /* ancho fijo para cada elemento */
+    float: left; /* flotar los elementos a la izquierda */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(100%)); /* mover el contenido hacia la izquierda un elemento a la vez */
+    }
+  }
+
+  .texto-grande {
+    font-size: 24px;
+    font-family: Arial;
+    text-align: center;
+    color: rgb(26, 159, 216);
+  }

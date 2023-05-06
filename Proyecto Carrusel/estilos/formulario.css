@@ -1,0 +1,86 @@
+form {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    border: 2px solid #ccc;
+    padding: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"], 
+  input[type="email"], 
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  input[type="number"], 
+  input[type="edad"], 
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  input[type="number"], 
+  input[type="telefono"], 
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  .h1title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+/* Estilos para la tabla */
+.tabla-matricula th,
+.tabla-matricula td {
+  border: 1px solid #dddddd00;
+  text-align: left;
+  padding: 12px 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+  font-size: 20px; /* Cambia el tamaño del texto */
+}
+
+.tabla-matricula {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  margin: 0 auto; /* Centra la tabla horizontalmente */
+}

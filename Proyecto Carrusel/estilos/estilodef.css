@@ -1,0 +1,77 @@
+header {
+	background-color: rgba(204, 244, 4, 0);
+	padding: 10px 0;
+
+	
+	}
+
+body {
+    background-image: url('../imagenes/fondos/jahy.jpg');
+    background-size: 100% 100%;
+    background-size: no-repeat contain;
+	height: 75vw;
+	
+  }
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: inline-block;
+	color: rgb(33, 184, 179);
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: rgb(255, 255, 255);
+}
+
+.botonBonito {
+	background: #d3ee06;
+	color: rgb(14, 14, 14);
+	padding: 10px 20px;
+	border: 1px solid #5f5353;
+	border-radius: 5px;
+	}
+
+.botonBonito1 {
+		background: #ea00ff;
+		color: rgb(255, 255, 255);
+		padding: 10px 20px;
+		border: 1px solid #000000;
+		border-radius: 5px;
+		}
+
+.botonBonito2 {
+			background: #000000;
+			color: rgb(34, 185, 67);
+			padding: 10px 20px;
+			border: 1px solid #ffffff;
+			border-radius: 5px;
+			}
+
+			.tablaDatos {
+				border-collapse: collapse;
+				width: 100%;
+			  }
+			  
+			  .tablaDatos th, #tablaDatos td {
+				padding: 8px;
+				text-align: left;
+				border-bottom: 1px solid #ddd;
+			  }
+			  
+			  .tablaDatos th {
+				background-color: #4CAF50;
+				color: white;
+			  }	
+
