@@ -17,14 +17,14 @@
   
   <header> 
       <img src="../Listado_Estudiantes/fotos/7.png" style="float: right; width: 5em; height: 5em; border-radius: 3em;">
-            <nav style="margin-left: 2.5em;">
+            <nav style="margin-left: 4.5em;">
                 <ul>
                 <a href="../carrusel.html" class="botonBonito">Atrás</a>
                 </ul>
             </nav>
         </header>
-        <h1 class="titulo" style="margin-left: 1.2em; margin-top: .7em;">Graficos </h1>
-        <br><br><br>
+        <h1 class="titulo" style="margin-left: 2.2em; margin-top: .7em;">Gráficos </h1>
+        <br>
 </head>
 <body>
 	
@@ -32,9 +32,9 @@
 <body>
 
 <div>
-  <canvas id="myChart" style="justify-content: center;"></canvas>
+  <canvas id="myChart" style="width: 500px; height: 500px;"></canvas>
 
-</div>
+</div> 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx = document.getElementById('myChart');
@@ -54,6 +54,7 @@ new Chart(ctx, {
   data: data,
   options: {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         labels: {
