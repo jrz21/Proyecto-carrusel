@@ -102,15 +102,26 @@ nav a:hover {
 			}
 
 .botonBonito2 {
-			background: #000000;
-			color: rgb(34, 185, 67);
+			background: #89e9c6;
+			color: rgb(61, 104, 204);
 			padding: 10px 20px;
-			border: 1px solid #ffffff;
-			border-radius: 5px;
+			margin-right: 10em;
+			border-radius: 5em;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
 			}
+			.botonBonito2:hover {
+				background: #508e9c;
+				color: rgb(255, 255, 255);
+				font-size: 1em;
+				font-family: 'Fira Sans Condensed', sans-serif;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5em;
+				transform:scale(1.1);
+				transition: all .5s;
+				}
 
 			/* ESTILOS TABLA ESTUDIANTES */
 			.styled-table {
