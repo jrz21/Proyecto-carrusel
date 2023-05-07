@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Consulta de base de datos</title>
+    <title>Estudiantes</title>
     <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="../estilos/estilodef.css">
         <link rel="stylesheet" type="text/css" href="../estilos/formulario.css">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../imagenes/fondos/df7972064f440a205dfb45e6be7963fe-insignia-de-cita-de-circo-simple-de-carrusel.png">
         <link rel="stylesheet" href="">
 </head>
 <body>
 <header>
-            <h1>Estudiantes<img src="../Listado_Estudiantes/fotos/7.png" style="float: right; width: 100px;"></h1> 
-            <nav>
-                <ul>
-                <li><a href="../carrusel.html" class="botonBonito">Inicio</a></li> 
-                <li><a href="Registrar_Estudiante/ingresar_estudiantes.html" class="botonBonito">Registrar estudiantes</a></li>
-                <li><a href="Modificar_estudiantes/estudiantes_cambiar.html" class="botonBonito">Modificar estudiantes</a></li> 
-                </ul>
-            </nav>
-        </header>
+    <img src="../Listado_Estudiantes/fotos/7.png" style="float: right; width: 5em; height: 5em; border-radius: 3em;">
+    <nav style="margin-left: 7em;">
+        <ul>
+            <a href="../carrusel.html" class="botonBonito">Inicio</a>
+            
+            <a href="Registrar_Estudiante/ingresar_estudiantes.html" class="botonBonito">Registrar Estudiantes</a>
+            
+            <a href="Modificar_estudiantes/estudiantes_cambiar.html" class="botonBonito">Modificar Estudiantes</a>
+        </ul>
+    </nav>
+</header>
+            <h1 class="titulo" style="align-items: center; text-align: center; justify-content: center; margin-left: 0.3em;">Lista De Estudiantes</h1>
+          
+          <center> 
+            <button id="btnMostrarDatos" class="botonBonito1"  style="align-items: center; text-align: center; justify-content: center; margin-left: 0.3em;">Mostrar Estudiantes   
+            </button>
 
-            <h1 class="h1title">Lista De Estudiantes</h1>
-            <button id="btnMostrarDatos" class="botonBonito">Mostrar datos</button>
-    <table id="tablaDatos" class="tablaDatos" style="display:none" border="1" >
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Edad</th>
-                <th>Imagen</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table> 
+            <table id="tablaDatos" class="styled-table" style="display: none;">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Imagen</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table> </center> 
+
 </body>
 <script src="consulta_estudiantes.js"></script>
 <script src="imagen_estudiante.js"></script>

@@ -2,63 +2,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" type="text/css" href="../estilos/estilodef.css">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-	<title>Gráfico circular</title>
-    <header> <h1>Graficos <img src="../Listado_Estudiantes/fotos/7.png" style="float: right; width: 100px;"></h1> 
-            <nav>
+        <link rel="shortcut-icon" href="../imagenes/fondos/df7972064f440a205dfb45e6be7963fe-insignia-de-cita-de-circo-simple-de-carrusel.png">
+
+	<title>Gráficos</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="graficos.js"></script>
+  
+  
+  <header> 
+      <img src="../Listado_Estudiantes/fotos/7.png" style="float: right; width: 5em; height: 5em; border-radius: 3em;">
+            <nav style="margin-left: 2.5em;">
                 <ul>
-                <li><a href="../carrusel.html" class="botonBonito">Inicio</a></li> 
-                <li><a href="../Listado_Estudiantes/carrusel_estudiantes.html" class="botonBonito">Estudiantes</a></li> 
-                <li><a href="../Registrar_estudiante/ingresar_estudiantes.html" class="botonBonito">Insertar estudiantes</a></li> 
-				<li><a href="../Modificar_estudiantes/estudiantes_cambiar.html" class="botonBonito">Modificar estudiantes</a></li> 
-				<li><a href="../matricula/ingresar_matricula.html" class="botonBonito">Matricula</a></li>
-                <li><a href="#" class="botonBonito">Botón 5</a></li>
+                <a href="../carrusel.html" class="botonBonito">Atrás</a>
                 </ul>
             </nav>
         </header>
-        <br>
+        <h1 class="titulo" style="margin-left: 1.2em; margin-top: .7em;">Graficos </h1>
+        <br><br><br>
 </head>
 <body>
 	
 <div>
-<head>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<script src="graficos.js"></script>
-	
-</head>
 <body>
 
 <div>
-  <canvas id="myChart"></canvas>
+  <canvas id="myChart" style="justify-content: center;"></canvas>
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx = document.getElementById('myChart');
 
+const data = {
+  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+  datasets: [{
+    label: 'Numero de Votos',
+    data: [12, 22, 23, 5, 2, 3],
+    backgroundColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange'],
+    borderWidth: 1
+  }]
+};
+
 new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    datasets: [{
-      label: 'Numero de Votos',
-      data: [12, 22, 23, 5, 2, 3],
-      borderWidth: 1,
-      backgroundColor: 'red' // Cambiar los colores de fondo aquí si lo deseas
-    }]
-  },
+  type: 'doughnut',
+  data: data,
   options: {
-    responsive: true, // Agregar la opción responsive
-    maintainAspectRatio: false, // Opcional: desactivar la relación de aspecto fija
-    scales: {
-      y: {
-        beginAtZero: true
+    responsive: true,
+    plugins: {
+      legend: {
+        labels: {
+          color: 'white',
+        },
+        
       }
     }
   }

@@ -7,7 +7,7 @@
   .carousel-slide {
     display: flex;
     width: calc(100%); /* 3 veces el ancho del contenedor para contener los 3 textos */
-    animation: slide 10s infinite;
+    animation: slide 20s infinite;
   }
   
   .carousel-item {
@@ -24,9 +24,25 @@
     }
   }
 
-  .texto-grande {
-    font-size: 24px;
-    font-family: Arial;
-    text-align: center;
-    color: rgb(26, 159, 216);
-  }
+
+.scaleupbottom{
+  animation:scale-up-bottom 0.4s; 
+  font-size: 4.5em;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  color: rgb(251, 255, 40);
+  text-shadow: 0 0 .2rem rgba(0, 0, 0, 0.461), 0 0 .1rem rgba(0, 0, 0, 0.461), 0 0 .8rem rgba(0, 0, 0, 0.461); }
+
+  @keyframes scale-up-bottom{
+    0%{transform:scale(.5);transform-origin:center bottom}100%{transform:scale(1);transform-origin:center bottom}} 
+
+.scale-up-vertical-center{
+  animation:scale-up-vertical-center 0.4s;  
+  font-size: 3em;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  color: rgb(234, 234, 234);
+  text-shadow: 0 0 .2rem rgba(0, 0, 0, 0.461), 0 0 .1rem rgba(0, 0, 0, 0.461), 0 0 .8rem rgba(0, 0, 0, 0.461); } 
+
+  @keyframes scale-up-vertical-center{
+    0%{transform:scaleY(.2)}100%{transform:scaleY(1)}}

@@ -1,24 +1,26 @@
 form {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    font-size: 1.2em;
+    font-size: 1.1em;
     border: 2px solid #ccc;
-    padding: 20px;
+    padding: 16px;
   }
 
   label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+    color: black;
   }
 
   input[type="text"], 
   input[type="email"], 
   textarea {
     width: 100%;
-    padding: 10px;
-    font-size: 1.2em;
+    padding: 8px;
+    font-size: 1.5em;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 4em;
     margin-bottom: 20px;
   }
 
@@ -27,9 +29,9 @@ form {
   textarea {
     width: 100%;
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 4em;
     margin-bottom: 20px;
   }
 
@@ -38,9 +40,9 @@ form {
   textarea {
     width: 100%;
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 4em;
     margin-bottom: 20px;
   }
 
@@ -48,8 +50,9 @@ form {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
+    font-size: 1.5em;
     border: none;
-    border-radius: 4px;
+    border-radius: 4em;
     cursor: pointer;
   }
 
@@ -57,13 +60,24 @@ form {
     background-color: #3e8e41;
   }
 
-  .h1title {
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    color: #333;
+  input[type="button"] {
+    background-color: #36c3d9;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 4em;
+    cursor: pointer;
+  }
+
+  ::placeholder{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-align:start;
+    
   }
 
 /* Estilos para la tabla */
@@ -83,4 +97,8 @@ form {
   width: 100%;
   font-size: 14px;
   margin: 0 auto; /* Centra la tabla horizontalmente */
+}
+
+.input-matricula ::placeholder{
+  font-size: 1em;
 }

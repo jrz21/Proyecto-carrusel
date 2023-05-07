@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Formulario de Estudiantes</title>
+	<title>Registrar Estudiantes</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="../../estilos/estilodef.css">
 	<link rel="stylesheet" type="text/css" href="../../estilos/formulario.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../imagenes/fondos/df7972064f440a205dfb45e6be7963fe-insignia-de-cita-de-circo-simple-de-carrusel.png">
     </head>
 <body>
 <header>
-            <h1>Ingresar Nuevos Estudiantes<img src="../fotos/5.png" style="float: right; width: 100px;"></h1> 
-            <nav>
+		<img src="../fotos/5.png" style="float: right; width: 5em; height: 5em; border-radius: 3em;">
+            <nav style="align-items: center; text-align: center; justify-content: center; margin-left: 5em;">
                 <ul>
-                <li><a href="../carrusel_estudiantes.html" class="botonBonito">Estudiantes</a></li> 
-                <li><a href="../Modificar_estudiantes/estudiantes_cambiar.html" class="botonBonito">Modificar estudiantes</a></li> 
+                <a href="../carrusel_estudiantes.html" class="botonBonito">Atrás</a>
                 </ul>
             </nav>
         </header>
-	<h1 class="h1title">Formulario de Estudiantes</h1>
-	<form id="formulario" class="form" method="POST">
-		<label for="nombre">Nombre:</label>
-		<input type="text" id="nombre" name="nombre" required><br><br>
-		
-		<label for="apellido">Apellido:</label>
-		<input type="text" id="apellido" name="apellido" required><br><br>
-		
-		<label for="codigo_ID">Codigo:</label>
-		<input type="text" id="codigo_ID" name="codigo_ID" required><br><br>
 
-		<label for="email">Email:</label>
-		<input type="text" id="email" name="email" required><br><br>
+		<h1 class="titulo" style=" margin-top: 0.5em; align-items: center; text-align: center; justify-content: center; margin-left: 3em;">
+		Registrar un Estudiante</h1>
 
-		<label for="telefono">Telefono:</label>
-		<input type="text" id="telefono" name="telefono" required><br><br>
-		
-		<label for="edad">Edad:</label>
-		<input type="number" id="edad" name="edad" required><br><br>
-		
-		<input type="submit" value="Enviar">
-	</form>
+		<form id="formulario" class="form" method="POST">
+			<div class="form-group">
+			  <label for="nombre">Nombre:</label>
+			  <input type="text" id="nombre" name="nombre" placeholder="Ingrese un nombre" required>
+			</div>
+		  
+			<div class="form-group">
+			  <label for="apellido">Apellido:</label>
+			  <input type="text" id="apellido" name="apellido" placeholder="Ingrese un apellido" required>
+			</div>
+		  
+			<div class="form-group">
+			  <label for="codigo_ID">Codigo:</label>
+			  <input type="text" id="codigo_ID" name="codigo_ID" placeholder="Ingrese un codigo unico" required>
+			</div>
+		  
+			<div class="form-group">
+			  <label for="email">Email:</label>
+			  <input type="email" id="email" name="email" placeholder="Ingrese un email" required>
+			</div>
+		  
+			<div class="form-group">
+			  <label for="telefono">Telefono:</label>
+			  <input type="text" id="telefono" name="telefono" placeholder="Ingrese un numero telefonico" required>
+			</div>
+		  
+			<div class="form-group">
+			  <label for="edad">Edad:</label>
+			  <input type="number" id="edad" name="edad" placeholder="Ingrese la edad" required>
+			</div>
+		  
+			<div class="form-group">
+			  <input type="submit" value="Enviar" class="btn-submit" style="margin-left: 9em;">
+			</div>
+		  </form>
 
 </body>
 <script src="insertar_estudiantes.js"></script>
